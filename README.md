@@ -23,7 +23,7 @@ Default recipe - server.rb
 # TEST 
 
 Run kitchen verify
-Test configuration at "cookbooks/workstation/.kitchen.yml"
+<br>Test configuration at "cookbooks/workstation/.kitchen.yml"
 <br> It will use "cookbooks/workstation/test/integration/default/serverspec/default_spec.rb"
 
 ## WORKSTATION
