@@ -1,0 +1,15 @@
+I, [2016-06-23T14:26:37.648825 #30744]  INFO -- default-centos-67: -----> Destroying <default-centos-67>...
+I, [2016-06-23T14:26:37.758323 #30744]  INFO -- default-centos-67: UID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD
+I, [2016-06-23T14:26:37.758585 #30744]  INFO -- default-centos-67: root                30150               1021                0                   14:22               ?                   00:00:00            /usr/sbin/sshd -D -o UseDNS=no -o UsePAM=no -o PasswordAuthentication=yes -o UsePrivilegeSeparation=no -o PidFile=/tmp/sshd.pid
+I, [2016-06-23T14:26:37.758660 #30744]  INFO -- default-centos-67: root                30599               30150               0                   14:23               ?                   00:00:00            /usr/sbin/httpd
+I, [2016-06-23T14:26:37.758846 #30744]  INFO -- default-centos-67: apache              30601               30599               0                   14:23               ?                   00:00:00            /usr/sbin/httpd
+I, [2016-06-23T14:26:37.758916 #30744]  INFO -- default-centos-67: apache              30602               30599               0                   14:23               ?                   00:00:00            /usr/sbin/httpd
+I, [2016-06-23T14:26:37.759001 #30744]  INFO -- default-centos-67: apache              30603               30599               0                   14:23               ?                   00:00:00            /usr/sbin/httpd
+I, [2016-06-23T14:26:37.759066 #30744]  INFO -- default-centos-67: apache              30604               30599               0                   14:23               ?                   00:00:00            /usr/sbin/httpd
+I, [2016-06-23T14:26:37.759146 #30744]  INFO -- default-centos-67: apache              30605               30599               0                   14:23               ?                   00:00:00            /usr/sbin/httpd
+I, [2016-06-23T14:26:37.759853 #30744]  INFO -- default-centos-67: apache              30606               30599               0                   14:23               ?                   00:00:00            /usr/sbin/httpd
+I, [2016-06-23T14:26:37.759915 #30744]  INFO -- default-centos-67: apache              30607               30599               0                   14:23               ?                   00:00:00            /usr/sbin/httpd
+I, [2016-06-23T14:26:37.759997 #30744]  INFO -- default-centos-67: apache              30608               30599               0                   14:23               ?                   00:00:00            /usr/sbin/httpd
+I, [2016-06-23T14:26:38.220011 #30744]  INFO -- default-centos-67: 859e771899305661ae408121d96dc16a95452d79716ea530aeb214747d599c31
+I, [2016-06-23T14:26:39.982665 #30744]  INFO -- default-centos-67: 859e771899305661ae408121d96dc16a95452d79716ea530aeb214747d599c31
+I, [2016-06-23T14:26:40.001169 #30744]  INFO -- default-centos-67: Finished destroying <default-centos-67> (0m2.35s).
