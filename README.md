@@ -8,7 +8,7 @@ Default recipe - setup.rb
 
 * The package named 'cowsay' is installed
 * The package named 'tree' is installed
-* The file named /etc/motd is created
+* The file named /etc/motd is created reading info from system using OHAI
 
 ## APACHE
 
