@@ -35,6 +35,6 @@ Example: Run kitchen verify
 
 ## APACHE
 
-* "httpd should be_installed" --> OK
-* file '/var/www/html/index.html' should be_file && should contain 'Hello World'
-* service 'httpd' should be_enabled && should be_running
+* "httpd should be_installed"                                                    --> OK
+* file '/var/www/html/index.html' should be_file && should contain 'Hello World' --> OK
+* service 'httpd' should be_enabled && should be_running                         --> OK

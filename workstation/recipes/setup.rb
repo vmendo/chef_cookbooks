@@ -11,11 +11,12 @@ package 'git' do
 end
 
 file '/etc/motd' do
-  content 'Property of .....
-  IPADDRESS: 10.91.181.7 
-  HOSTNAME : ip-10-91-181-7
-  MEMORY : 502272 kB
-  CPU : 1799.999'
+  content "Property of .....
+    IPADDRESS: #{node['ipaddress']}
+    HOSTNAME : #{node['hostname']}
+    MEMORY : #{node['memory']['total']}
+    CPU : #{node['cpu']['0']['mhz']}
+  "
   mode '0644'
   owner 'root'
   group 'root'
