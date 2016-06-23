@@ -22,7 +22,7 @@ Default recipe - server.rb
 
 # TEST 
 
-Run kitchen verify
+Example: Run kitchen verify
 <br>Test configuration at "cookbooks/workstation/.kitchen.yml"
 <br> It will use "cookbooks/workstation/test/integration/default/serverspec/default_spec.rb"
 
@@ -32,3 +32,9 @@ Run kitchen verify
 * "cowsay should be installed"         --> FAIL
 * "git should be installed"            --> OK
 * "/etc/motd should be_owned_by'root'" --> OK
+
+## APACHE
+
+* "httpd should be_installed" --> OK
+* file '/var/www/html/index.html' should be_file && should contain 'Hello World'
+* service 'httpd' should be_enabled && should be_running
