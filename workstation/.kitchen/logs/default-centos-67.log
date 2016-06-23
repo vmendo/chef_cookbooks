@@ -1,0 +1,78 @@
+I, [2016-06-23T11:06:45.487248 #27199]  INFO -- default-centos-67: -----> Verifying <default-centos-67>...
+W, [2016-06-23T11:06:45.488704 #27199]  WARN -- default-centos-67: Running legacy verify for 'Docker' Driver
+I, [2016-06-23T11:06:45.489292 #27199]  INFO -- default-centos-67: Preparing files for transfer
+I, [2016-06-23T11:06:45.980302 #27199]  INFO -- default-centos-67: Removing /tmp/verifier/suites/serverspec
+I, [2016-06-23T11:06:45.997588 #27199]  INFO -- default-centos-67: Transferring files to <default-centos-67>
+I, [2016-06-23T11:06:46.528260 #27199]  INFO -- default-centos-67: -----> Running serverspec test suite
+I, [2016-06-23T11:06:46.694138 #27199]  INFO -- default-centos-67: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.4.1/lib:/tmp/verifier/gems/gems/rspec-core-3.4.4/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+I, [2016-06-23T11:06:47.435047 #27199]  INFO -- default-centos-67: 
+I, [2016-06-23T11:06:47.435217 #27199]  INFO -- default-centos-67: workstation::default
+I, [2016-06-23T11:06:47.435283 #27199]  INFO -- default-centos-67:   Package "tree"
+I, [2016-06-23T11:06:47.688030 #27199]  INFO -- default-centos-67: [32m    should be installed[0m
+I, [2016-06-23T11:06:47.688188 #27199]  INFO -- default-centos-67:   Package "cowsay"
+I, [2016-06-23T11:06:47.806038 #27199]  INFO -- default-centos-67: [31m    should be installed (FAILED - 1)[0m
+I, [2016-06-23T11:06:47.806200 #27199]  INFO -- default-centos-67:   Package "git"
+I, [2016-06-23T11:06:47.893908 #27199]  INFO -- default-centos-67: [32m    should be installed[0m
+I, [2016-06-23T11:06:47.894027 #27199]  INFO -- default-centos-67:   File "/etc/motd"
+I, [2016-06-23T11:06:47.933829 #27199]  INFO -- default-centos-67: [32m    should be owned by "root"[0m
+I, [2016-06-23T11:06:47.985056 #27199]  INFO -- default-centos-67: 
+I, [2016-06-23T11:06:47.985211 #27199]  INFO -- default-centos-67: Failures:
+I, [2016-06-23T11:06:47.985275 #27199]  INFO -- default-centos-67: 
+I, [2016-06-23T11:06:47.985354 #27199]  INFO -- default-centos-67:   1) workstation::default Package "cowsay" should be installed
+I, [2016-06-23T11:06:47.985471 #27199]  INFO -- default-centos-67:      [31mFailure/Error: it { should be_installed}[0m
+I, [2016-06-23T11:06:47.985528 #27199]  INFO -- default-centos-67:      [31m  expected Package "cowsay" to be installed[0m
+I, [2016-06-23T11:06:47.985581 #27199]  INFO -- default-centos-67:      [31m  /bin/sh -c rpm\ -q\ cowsay[0m
+I, [2016-06-23T11:06:47.985654 #27199]  INFO -- default-centos-67:      [31m  package cowsay is not installed
+I, [2016-06-23T11:06:47.985712 #27199]  INFO -- default-centos-67: [0m
+I, [2016-06-23T11:06:47.985765 #27199]  INFO -- default-centos-67:      [36m# /tmp/verifier/suites/serverspec/default_spec.rb:11:in `block (3 levels) in <top (required)>'[0m
+I, [2016-06-23T11:06:47.987994 #27199]  INFO -- default-centos-67: 
+I, [2016-06-23T11:06:47.988070 #27199]  INFO -- default-centos-67: Finished in 0.49962 seconds (files took 0.66006 seconds to load)
+I, [2016-06-23T11:06:47.988128 #27199]  INFO -- default-centos-67: [31m4 examples, 1 failure[0m
+I, [2016-06-23T11:06:47.988227 #27199]  INFO -- default-centos-67: 
+I, [2016-06-23T11:06:47.988282 #27199]  INFO -- default-centos-67: Failed examples:
+I, [2016-06-23T11:06:47.988334 #27199]  INFO -- default-centos-67: 
+I, [2016-06-23T11:06:47.988386 #27199]  INFO -- default-centos-67: [31mrspec /tmp/verifier/suites/serverspec/default_spec.rb:11[0m [36m# workstation::default Package "cowsay" should be installed[0m
+I, [2016-06-23T11:06:47.988438 #27199]  INFO -- default-centos-67: 
+I, [2016-06-23T11:06:48.025020 #27199]  INFO -- default-centos-67: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.4.1/lib:/tmp/verifier/gems/gems/rspec-core-3.4.4/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec failed
+I, [2016-06-23T11:06:48.040963 #27199]  INFO -- default-centos-67: !!!!!! Ruby Script [/tmp/verifier/gems/gems/busser-serverspec-0.5.9/lib/busser/runner_plugin/../serverspec/runner.rb /tmp/verifier/suites/serverspec] exit code was 1
+E, [2016-06-23T11:06:48.076797 #27199] ERROR -- default-centos-67: Verify failed on instance <default-centos-67>.
+E, [2016-06-23T11:06:48.077006 #27199] ERROR -- default-centos-67: ------Exception-------
+E, [2016-06-23T11:06:48.077066 #27199] ERROR -- default-centos-67: Class: Kitchen::ActionFailed
+E, [2016-06-23T11:06:48.077114 #27199] ERROR -- default-centos-67: Message: SSH exited (1) for command: [sh -c '
+
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+
+sudo -E /tmp/verifier/bin/busser test
+']
+E, [2016-06-23T11:06:48.077224 #27199] ERROR -- default-centos-67: ---Nested Exception---
+E, [2016-06-23T11:06:48.077276 #27199] ERROR -- default-centos-67: Class: Kitchen::Transport::SshFailed
+E, [2016-06-23T11:06:48.077320 #27199] ERROR -- default-centos-67: Message: SSH exited (1) for command: [sh -c '
+
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+
+sudo -E /tmp/verifier/bin/busser test
+']
+E, [2016-06-23T11:06:48.077364 #27199] ERROR -- default-centos-67: ------Backtrace-------
+E, [2016-06-23T11:06:48.077407 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/driver/ssh_base.rb:116:in `rescue in verify'
+E, [2016-06-23T11:06:48.077450 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/driver/ssh_base.rb:119:in `verify'
+E, [2016-06-23T11:06:48.077495 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:598:in `legacy_ssh_base_verify'
+E, [2016-06-23T11:06:48.077538 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:403:in `block in verify_action'
+E, [2016-06-23T11:06:48.077594 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `call'
+E, [2016-06-23T11:06:48.077639 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `synchronize_or_call'
+E, [2016-06-23T11:06:48.077718 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:460:in `block in action'
+E, [2016-06-23T11:06:48.077765 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-06-23T11:06:48.077809 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:459:in `action'
+E, [2016-06-23T11:06:48.077853 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:401:in `verify_action'
+E, [2016-06-23T11:06:48.077897 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-06-23T11:06:48.077940 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `each'
+E, [2016-06-23T11:06:48.077984 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-06-23T11:06:48.078039 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-06-23T11:06:48.078084 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-06-23T11:06:48.078137 #27199] ERROR -- default-centos-67: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-06-23T11:06:48.078270 #27199] ERROR -- default-centos-67: ----------------------
