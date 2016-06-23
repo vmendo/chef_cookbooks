@@ -24,7 +24,7 @@ Default recipe - server.rb
 
 Run kitchen verify
 Test configuration at "cookbooks/workstation/.kitchen.yml"
-It will use "cookbooks/workstation/test/integration/default/serverspec/default_spec.rb"
+/n It will use "cookbooks/workstation/test/integration/default/serverspec/default_spec.rb"
 
 ## WORKSTATION
 
