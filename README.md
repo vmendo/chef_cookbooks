@@ -20,7 +20,7 @@ Default recipe - server.rb
 * The file named '/var/www/html/index.html'is created with the content 'Hello, world'
 * The service named 'httpd' is started and enabled 
 
-### TEST 
+# TEST 
 
 Run kitchen verify
 Test configuration at "cookbooks/workstation/.kitchen.yml"
